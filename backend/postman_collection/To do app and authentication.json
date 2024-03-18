@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "79fef97e-1331-4245-bc52-208d43075575",
+		"name": "MERN-TODO-App-with-authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4902543"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "SIGN UP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"jinal\",\n    \"email\": \"j@j.com\",\n    \"mobileNumber\": \"67867565\",\n    \"password\": \"123456\",\n    \"confirmPassword\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/user/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET ALL TODOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:4000/todos/list"
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE A TODO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"title\":\"ambaji toor\",\r\n   \"description\":\"This is my nine todo.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:4000/todo/create"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE A TODO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\":\"ambaji toor\",\r\n        \"description\": \"This is my one todo.\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:4000/todo/65f19b8c17c83819e3f6d773"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE A TODO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:4000/todo/65f19b8c17c83819e3f6d773"
+			},
+			"response": []
+		}
+	]
+}
